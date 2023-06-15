@@ -1,0 +1,20 @@
+ .header{
+    padding: 20px;
+    font-family:  sans-serif;
+    background-color: rgb(37, 122, 37);
+    color: white;
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .centered {
+    text-align: center;
+}
+
+
+
+
+
+

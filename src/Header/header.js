@@ -1,26 +1,23 @@
 import React from 'react';
 import style from '../Header/header.module.css';
 import Navigation from '../Navigation/navigation';
+import { NavLink } from 'react-router-dom';
+import { Navbar, Nav } from 'react-bootstrap';
 
 
 
 const Header = () => {
     return (
         <>
-            <div className="header">
-                <h1 className= "centered">James Martin</h1>
-                <nav>
-                    <ul>
-                        <li> <a className="nav-links" href="#About-Me">About Me</a></li>
-                        <li> <a className="nav-links" href="#Portfolio">Portfolio</a></li>
-                        <li> <a className="nav-links" href="#Contact-Me">Contact Me</a></li>
-                        <li> <a className="nav-links" href="#Resume">Resume</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-
+            <Navbar className="header">
+                <h1 className="name">James Martin</h1>
+                <div className='links'>
+                    <NavLink exact to='/about' className='link' href='/about'>About Me</NavLink>
+                    <NavLink exact to='/portfolio' className='link' href='/portfolio'>Portfolio</NavLink>
+                    <NavLink exact to='contact' className='link' href='/contact'>Contact Me</NavLink>
+                    <NavLink exact to='resume' className='link' href='/resume'>Resume</NavLink>
+                </div>
+            </Navbar>
         </>
     )
 }
